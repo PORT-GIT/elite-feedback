@@ -2,7 +2,7 @@ from django.urls import path
 from customerapp import views
 
 urlpatterns= [
-    path('', views.index, name="index"),
+    path('', views.customer, name="customer"),
 
-    path('page', views.page, name="page"),
+    path('profile', views.profile, name="profile"),
 ]

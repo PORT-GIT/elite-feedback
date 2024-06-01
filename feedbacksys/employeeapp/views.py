@@ -3,10 +3,18 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def homepage(request):
+def employee_profile(request):
 
     return HttpResponse ("Hello!")
 
 def login(request):
 
     return HttpResponse ("Login!")
+
+def records(request):
+
+    return HttpResponse ("Hello!")
+
+def register(request):
+
+    return HttpResponse ("Hello!")
