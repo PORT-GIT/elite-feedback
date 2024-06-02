@@ -1,10 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Got your feedback!")
+    
+    return render(request, 'feedbackapp/index.html')
 
 def dashboard(request):
-    return HttpResponse("Login accepted!")
+
+    return render( request, 'feedbackapp/dashboard.html')

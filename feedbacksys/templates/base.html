@@ -9,9 +9,16 @@
     <!--CSS & STYLING LINKS-->
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
 </head>
 <body>
-    <h1>Hello</h1>
+    
+    {% block content %}
+
+    {% endblock %}
 
 
     <script src="{% static 'js/main.js' %}"></script>

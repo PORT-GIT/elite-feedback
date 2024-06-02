@@ -5,16 +5,16 @@ from django.http import HttpResponse
 
 def employee_profile(request):
 
-    return HttpResponse ("Hello!")
+    return render (request, 'employeeapp/employee-profile.html')
 
 def login(request):
 
-    return HttpResponse ("Login!")
+    return render (request, 'employeeapp/login.html')
 
 def records(request):
 
-    return HttpResponse ("Hello!")
+    return render (request, 'employeeapp/records.html')
 
 def register(request):
 
-    return HttpResponse ("Hello!")
+    return render (request, 'employeeapp/register.html')
