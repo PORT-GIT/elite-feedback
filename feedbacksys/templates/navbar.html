@@ -1,71 +1,128 @@
 {% load static %}
-
-<div class="container-fluid">
-    <div class="row flex-nowrap">
-        <div class="col-auto col-lg-2 px-lg-3 px-0 bg-dark">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-3 text-white min-vh-100">
-
-                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-3 d-none d-sm-inline">Elite Chic Salon</span>
-                </a>
-
-                <div class="nav mb-auto" id="">
-
-                    <div class="pages pb-3">
-                        <li>
-                            <a href="#" class="nav-link align-middle px-0">
-                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                            </a>
-                        </li>
-                        
-                        
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <span class="ms-1 d-none d-sm-inline">Employees</span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <span class="ms-1 d-none d-sm-inline">Feedback</span>
-                            </a>
-                        
-                        </li>
-                    </div>
-
-                    <hr class="border border-white opacity-50" style="width: 100%;">
-
-                    <div class="utilities mt-3">
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <span class="ms-1 d-none d-sm-inline">Settings</span> </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <span class="ms-1 d-none d-sm-inline">Sign out</span> </a>
-                        </li>
-
-                    </div>
-
-                    
-                </div>
-                
-                <hr class="border border-white w-100 opacity-50">
-                
-                <div class="pb-4">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none"
-                        id="">
-
-                        <img src="https://github.com/mdo.png" alt="" width="30" height="30"
-                            class="rounded-circle">
-                        <span class="d-none d-sm-inline mx-1"></span>
-                        <!--use {{user.sth}} to represent who is signed in-->
-                    </a>
-                    
-                </div>
-            </div>
+<div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+    <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu"
+        aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+                aria-label="Close"></button>
         </div>
-        
+        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#house-fill" />
+                        </svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark" />
+                        </svg>
+                        Orders
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#cart" />
+                        </svg>
+                        Products
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#people" />
+                        </svg>
+                        Customers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#graph-up" />
+                        </svg>
+                        Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#puzzle" />
+                        </svg>
+                        Integrations
+                    </a>
+                </li>
+            </ul>
+
+            <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                <span>Saved reports</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                    <svg class="bi">
+                        <use xlink:href="#plus-circle" />
+                    </svg>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark-text" />
+                        </svg>
+                        Current month
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark-text" />
+                        </svg>
+                        Last quarter
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark-text" />
+                        </svg>
+                        Social engagement
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark-text" />
+                        </svg>
+                        Year-end sale
+                    </a>
+                </li>
+            </ul>
+
+            <hr class="my-3">
+
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#gear-wide-connected" />
+                        </svg>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#door-closed" />
+                        </svg>
+                        Sign out
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
