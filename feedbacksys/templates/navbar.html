@@ -1,44 +1,71 @@
+{% load static %}
 
-<nav class="navbar navbar-expand-lg bg-dark p-4" data-bs-theme="dark">
-    <div class="container-fluid">
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-lg-2 px-lg-3 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-3 text-white min-vh-100">
 
-        <a class="navbar-brand fs-3" href="{% url 'index' %}">Elite Chic Beauty Feedback System</a>
-        <!--use url name instead of html pages-->
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-3 d-none d-sm-inline">Elite Chic Salon</span>
+                </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home
-                        <span class="visually-hidden">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+                <div class="nav mb-auto" id="">
+
+                    <div class="pages pb-3">
+                        <li>
+                            <a href="#" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <span class="ms-1 d-none d-sm-inline">Employees</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <span class="ms-1 d-none d-sm-inline">Feedback</span>
+                            </a>
+                        
+                        </li>
                     </div>
-                </li>
-            </ul>
-            
+
+                    <hr class="border border-white opacity-50" style="width: 100%;">
+
+                    <div class="utilities mt-3">
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <span class="ms-1 d-none d-sm-inline">Settings</span> </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <span class="ms-1 d-none d-sm-inline">Sign out</span> </a>
+                        </li>
+
+                    </div>
+
+                    
+                </div>
+                
+                <hr class="border border-white w-100 opacity-50">
+                
+                <div class="pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none"
+                        id="">
+
+                        <img src="https://github.com/mdo.png" alt="" width="30" height="30"
+                            class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1"></span>
+                        <!--use {{user.sth}} to represent who is signed in-->
+                    </a>
+                    
+                </div>
+            </div>
         </div>
+        
     </div>
-</nav>
+</div>
