@@ -1,14 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+    <div class="items-center">
 
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Welcome user!</h1>
+        </div>
+        
+
+        <div class="text-centre" style="text-align: center;">
+            <h3 class="fs-1">Consumer Feedback System</h3>
+        
+            <br>
+        
+            <h5>Keeping customers loyal and satisfied &nbsp; </h5>
+        
+            
+            <br>
+        
+            <button type="submit" class="btn btn-primary btn-outline-primary ">
+
+                <a href="{% url 'register' %}" style="text-decoration: none; 
+                    color: #fff; border-radius: 10px; padding: 12px; margin: 15px;"> 
+
+                    Create your account 
+                </a>
+                <!--when user clicks this button they will be directed to register page-->
+            </button>
+        </div>
     </div>
-
-
-    <p>
-        hello welcome user
-
-    </p>
+    
 {% endblock %}
