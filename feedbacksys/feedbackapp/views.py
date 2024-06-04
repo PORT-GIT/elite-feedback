@@ -10,3 +10,7 @@ def index(request):
 def dashboard(request):
 
     return render( request, 'feedbackapp/dashboard.html')
+
+def employee_profile(request):
+
+    return render (request, 'feedbackapp/employee-profile.html')
