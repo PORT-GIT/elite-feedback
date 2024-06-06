@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'phonenumber_field',
     #allows me to put some regulation on the phone number of the users
 
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -151,6 +150,7 @@ JAZZMIN_SETTINGS = {
     'site_brand':"Elite salon",
     
 }
+
 
 #to help django identify the new user changes we have have in collecting user data
 #to get the oath to the User changes
