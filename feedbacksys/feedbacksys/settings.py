@@ -34,6 +34,12 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jazzmin',
+    #alters the appearance of django admin site
+    'django_extensions',
+    #gives me a visual representation of models and their relationships
+    'phonenumber_field',
+    #allows me to put some regulation on the phone number of the users
+
 
     'django.contrib.admin',
     'django.contrib.auth',
