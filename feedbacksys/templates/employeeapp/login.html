@@ -2,5 +2,33 @@
 {% block title %} Login {% endblock %}
 
 {% block content %}
+<div>
+    <div class="row col-md-6 mt-5 offset-md-3 align-items-center">
+
+        <div class="border p-3">
+            <div class="title offset-md-2">
+                <h2>User Login</h2>
+            </div>
+
+            <hr class="bg-danger">
+
+            <div class="card-body">
+                <!--form from form.py will be here-->
+
+                <button type="submit" class="btn btn-primary btn-outline-primary ">
+
+                    <a href="{% url 'login' %}" style="text-decoration: none; 
+                        color: #fff; border-radius: 10px; padding: 12px; margin: 15px;">
+
+                        Login
+                    </a>
+                    <!--when user clicks this button they will be directed to register page-->
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 
 {% endblock %}

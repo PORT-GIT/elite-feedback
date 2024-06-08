@@ -8,7 +8,7 @@ class Customer(models.Model):
     first_name = models.CharField(max_length=10)
     last_name = models.CharField(max_length=10)
     phone_number = PhoneNumberField(blank=True)
-    email = models.EmailField(max_length=10)
+    email = models.EmailField(max_length=50)
     date_joined = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):

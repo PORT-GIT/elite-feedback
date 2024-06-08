@@ -1,15 +1,16 @@
-from django.db import models
-#from django.contrib.auth.models import AbstractUser
-#linking models from customerapp
-#from ..customerapp.models import customer
+# from django.db import models
+# from phonenumber_field.modelfields import PhoneNumberField
+# from django.contrib.auth.models import AbstractUser
+# #linking models from customerapp
+# #from ..customerapp.models import customer
 
-# Create your models here.
+# #Create your models here.
 
 # class User(AbstractUser):
-#     employee_id = models.IntegerField(primary_key=True)
+#     employee_id = models.IntegerField(primary_key=True, on_delete=models.CASCADEA)
 #     first_name = models.CharField(max_length=10)
 #     last_name = models.CharField(max_length=10)
-#     phone = models.IntegerField()
+#     phone = PhoneNumberField()
 #     profile_image = models.ImageField(default="fallback.png", upload_to="proflile-images", blank=True)
 
 #     USERNAME_FIELD = "last_name"
