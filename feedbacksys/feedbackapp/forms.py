@@ -1,1 +1,1 @@
-from Django.contrib.auth import form
+from django.contrib.auth import forms
