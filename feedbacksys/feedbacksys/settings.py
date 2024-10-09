@@ -29,7 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -155,4 +154,4 @@ JAZZMIN_SETTINGS = {
 #to help django identify the new user changes we have have in collecting user data
 #to get the oath to the User changes
 
-#AUTH_USER_MODEL = 'feedbackapp.User'
+AUTH_USER_MODELS = 'employeeapp.User'
