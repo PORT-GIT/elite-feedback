@@ -81,6 +81,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'feedbacksys.wsgi.application'
 
+AUTH_USER_MODEL = "employeeapp.SalonManager"
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
