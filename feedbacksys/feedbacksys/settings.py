@@ -81,9 +81,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'feedbacksys.wsgi.application'
 
-AUTH_USER_MODEL = "employeeapp.SalonManager"
-
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -93,6 +90,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+AUTH_USER_MODEL = "employeeapp.SalonUser"
+#this is to tell django that i will not be using the default user model but the above custom user model
 
 
 # Password validation
