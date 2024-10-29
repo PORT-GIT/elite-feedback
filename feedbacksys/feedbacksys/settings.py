@@ -91,7 +91,6 @@ DATABASES = {
     }
 }
 
-AUTH_USER_MODEL = "employeeapp.SalonUser"
 #this is to tell django that i will not be using the default user model but the above custom user model
 
 
@@ -156,4 +155,3 @@ JAZZMIN_SETTINGS = {
 #to help django identify the new user changes we have have in collecting user data
 #to get the oath to the User changes
 
-AUTH_USER_MODELS = 'employeeapp.User'

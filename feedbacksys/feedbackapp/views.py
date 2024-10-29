@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView, ListView, DeleteView, DetailView, UpdateView
 from .models import Survey, SurveyResponse, Question, Choice
-from .forms import SurveyForm, QuestionForm, SurveyResponseForm
+#from .forms import SurveyForm, QuestionForm, SurveyResponseForm
 
 
 # Create your views here.

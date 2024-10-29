@@ -1,6 +1,5 @@
 from django.db import models
 from customerapp.models import Customer
-from employeeapp.models import SystemUsers
 from django.core.exceptions import ValidationError
 #raises errors when thenvalidation checks fail
 from .validators import is_english, is_properly_capitalized
@@ -77,7 +76,7 @@ class SurveyResponse(models.Model):
     class Meta:
         permissions = [
             
-            ("can_view_feedback", "Can view feedback")
+            ("can_view_feedback", "Can view feedback"),
             ("can_submit_feedback_to_salon", "Can submit feedback to salon"),
             ("can_respond_to_feedback", "Can respond to feedback"),
             ("can_delete_feedback", "Can delete feedback"),
