@@ -1,4 +1,5 @@
 {% extends 'base_auth.html' %}
+{% load crispy_forms_tags %}
 {% block title %} Login {% endblock %}
 
 {% block content %}
@@ -13,7 +14,10 @@
             <hr class="bg-danger">
 
             <div class="card-body">
-                <!--form from form.py will be here-->
+
+                {% csrf_token %}
+
+                {% crispy form %}
 
                 <button type="submit" class="btn btn-primary btn-outline-primary ">
 
@@ -24,6 +28,10 @@
                     </a>
                     <!--when user clicks this button they will be directed to register page-->
                 </button>
+
+                <a href={% url 'register' %}>
+                    New to the System?Register here
+                </a>
             </div>
         </div>
 

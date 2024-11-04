@@ -28,7 +28,7 @@ urlpatterns = [
 
     path('customerapp/', include('customerapp.urls')),
 
-    path('', include('feedbackapp.urls')),
+    path('feedbackapp/', include('feedbackapp.urls')),
     #user will be welcome to the index page here and the dashboard with the charts and etc.
 
     path('employeeapp/', include('employeeapp.urls'))

@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     #gives me a visual representation of models and their relationships
     'phonenumber_field',
     #allows me to put some regulation on the phone number of the users
+    'crispy_forms',
+    #library to beautify forms
+    'crispy_bootstrap5',
+    #crispy forms and bootstrap
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -50,6 +54,12 @@ INSTALLED_APPS = [
     'feedbackapp',
     'employeeapp',
 ]
+
+# Add crispy forms to the list of installed apps
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

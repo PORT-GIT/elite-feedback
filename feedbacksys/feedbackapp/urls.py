@@ -1,6 +1,6 @@
 from django.urls import path
 from feedbackapp import views
-from .views import SurveyCreateView, SurveyDeleteview, SurveyDetailView, SurveyListView, SurveyUpdateView, QuestionCreateView, QuestionDeleteView, QuestionListView, QuestionUpdateView, QuestionListView, QuestionDetailView, AnswerDetailView, AnswerListView
+from .views import SurveyCreateView, SurveyDeleteView, SurveyDetailView, SurveyListView, SurveyUpdateView, QuestionCreateView, QuestionDeleteView, QuestionListView, QuestionUpdateView, QuestionListView, QuestionDetailView, AnswerDetailView, AnswerListView, AnswerDeleteView
 
 
 urlpatterns = [
@@ -8,7 +8,7 @@ urlpatterns = [
 
     path('dashboard', views.dashboard, name="dashboard"),
 
-    path('employee-profile', views.employee_profile, name="employee-profile"),
+    #path('employee-profile', views.employee_profile, name="employee-profile"),
     
 
     #these are urls for the surveys
@@ -18,7 +18,7 @@ urlpatterns = [
 
     path('survey/edit/<int:pk>/', SurveyUpdateView.as_view(), name='survey-edit'),
 
-    path('survey/delete/<int:pk>/', SurveyDeleteview.as_view(), name='survey-delete'),
+    path('survey/delete/<int:pk>/', SurveyDeleteView.as_view(), name='survey-delete'),
 
     path('survey/details/<int:pk>/', SurveyDetailView.as_view(), name='survey-details'),
 
@@ -40,5 +40,7 @@ urlpatterns = [
 
     #path('feedback/create/', AnswerCreateView.as_view(), name='feedback-list'),
 
-    path('feedback/details/<int:pk>/', AnswerDetailView.as_view(), name='feedback-details')
+    path('feedback/details/<int:pk>/', AnswerDetailView.as_view(), name='feedback-details'),
+
+    path('feedback/details/<int:pk>/', AnswerDeleteView.as_view(), name='feedback-delete'),
 ]

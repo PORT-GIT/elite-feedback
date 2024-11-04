@@ -1,4 +1,7 @@
 {% extends 'base_auth.html' %}
+{% comment %} loading crispy forms library {% endcomment %}
+{% load crispy_forms_tags %}
+
 {% block title %} Registration {% endblock %}
 
 {% block content %}
@@ -16,15 +19,23 @@
             <div class="card-body">
                 <!--form from form.py will be here-->
 
-                <button type="submit" class="btn btn-primary btn-outline-primary ">
-                
-                    <a href="{% url 'login' %}" style="text-decoration: none; 
-                        color: #fff; border-radius: 10px; padding: 12px; margin: 15px;">
-                
-                        Register your account
-                    </a>
-                    <!--when user clicks this button they will be directed to register page-->
-                </button>
+                <form method=POST>
+                    {% csrf_token %}
+
+                    {% crispy form %}
+
+
+                    <button type="submit" class="btn btn-primary btn-outline-primary ">
+
+                        {% comment %} the url name must be similar to the name in the views {% endcomment %}
+                        <a href="{% url 'login' %}" style="text-decoration: none; 
+                            color: #fff; border-radius: 10px; padding: 12px; margin: 15px;">
+
+                            Register User
+                        </a>
+                        <!--when user clicks this button they will be directed to register page-->
+                    </button>
+                </form>
             </div>
         </div>
 
